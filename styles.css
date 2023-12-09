@@ -1,6 +1,10 @@
+@font-face {
+    font-family: 'Monument_Valley_1.2';
+    src: url("../../assets/fonts/mntv.woff") format('woff');
+}
+
 body {
     font-family: 'Monument_Valley_1.2';
-    src: url("https://rawcdn.githack.com/beyondtheboard/beyondtheboard.github.io/6bb41dba7c68cc76c4cae5de766b92def7e5712f/assets/fonts/mntv.woff") format('woff2');
     margin: 0;
     font-weight: 500;
     font-style: normal;
