@@ -3,7 +3,7 @@ body {
     font-family: 'Monument_Valley_1.2';
     font-weight: 500;
     font-style: normal;
-    src: url("./assets/fonts/mntv.woff2") format('woff2'), url("./assets/fonts/mntv.otf") format('otf');
+    src: url("./assets/fonts/mntv.woff2") format('woff2'), url("./assets/fonts/mntv.otf") format('opentype');
     background-color: #000610;
     color: white;
     overflow-x: hidden;
