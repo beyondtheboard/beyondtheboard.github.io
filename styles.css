@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Monument_Valley_1.2';
+    font-weight: 500;
+    font-style: normal;
+    src: url("./assets/fonts/mntv.woff2") format('woff2');
+    background-color: #000610;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+#header {
+    /* background: red; */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.5);
+    z-index: 100;
+    /* color: white; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#nav-bar li {
+    float: left;
+}
+
+#nav-bar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#nav-bar li a:hover {
+    font-weight: 600;
+}
+
+#banner {
+    width: 90%;
+    align-self: center;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    display: block;
+}
+
+.space {
+    flex-grow: 1;
+}
+
+
+/* LOGO */
+
+#logo {
+    width: 40%;
+    margin-top: -190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 150px;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -190px;
+        opacity: 0;
+    }
+    to {
+        margin-top: -230px;
+        opacity: 1;
+    }
+}
+
+
+/* BANNERS */
+
+.banner2 {
+    width: 100%;
+    /* opacity: .8; */
+    z-index: 0;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+    margin-top: -800px;
+}
+
+.player iframe {
+    width: 50vw;
+    height: 500px;
+    z-index: 10;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
