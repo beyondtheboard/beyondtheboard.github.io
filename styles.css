@@ -3,7 +3,7 @@ body {
     font-family: 'Monument_Valley_1.2';
     font-weight: 500;
     font-style: normal;
-    src: url("./assets/fonts/mntv.woff2") format('woff2');
+    src: url("./assets/fonts/mntv.woff2") format('woff2'), url("./assets/fonts/mntv.otf") format('otf');
     background-color: #000610;
     color: white;
     overflow-x: hidden;
@@ -203,9 +203,17 @@ footer {
     justify-content: center;
     margin-bottom: 0.1rem;
     text-align: center;
+    width: 100%;
 }
 
 footer a {
     color: rgb(171, 171, 171);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        margin-top: 100px;
+        font-size: 0.7rem;
+    }
 }
