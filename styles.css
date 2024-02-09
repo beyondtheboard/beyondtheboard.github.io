@@ -36,12 +36,25 @@ h1 {
     width: 99vw;
 }
 
+#steam-header {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    width: 30vw;
+    transform: translate(-50%, 0);
+}
+
+#steam-header>#nav-bar {
+    background-color: #1a1e22;
+}
+
 #nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgba(51, 51, 51, 0.5);
+    background-color: #1a1e22;
     z-index: 100;
     /* color: white; */
 }
@@ -67,13 +80,35 @@ ul {
     /* font-size: x-large; */
 }
 
+#steam {
+    font-size: 3.5rem !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
     #header {
         width: 100vw;
     }
     #nav-bar li a {
         content: "";
+        margin-top: 10px;
         font-size: 0px;
+    }
+    #steam-header {
+        position: absolute;
+        top: 90vh;
+        width: 70vw;
+        font-size: 0px !important;
+        animation-duration: 4s;
+        animation-name: slidein;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    #steam {
+        font-size: 1.5rem !important;
+        margin-top: 2px !important;
+        margin-bottom: 2px;
     }
     i {
         font-size: 1.7rem;
@@ -116,6 +151,39 @@ ul {
     width: 105px;
 }
 
+.wish {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: transparent; */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50vh; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Font */
+    height: 200px;
+    width: 40%;
+    /* Font */
+    border-radius: 10px;
+    border-width: 0;
+    /* Font */
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    /* Font */
+    animation-duration: 1s;
+    /* animation-name: slidein; */
+    /* transition: .1s; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    /* Font */
+    font-family: 'Monument_Valley_1.2';
+    src: url("../../assets/fonts/mntv.woff") format('woff');
+}
+
 
 /* PC */
 
@@ -135,6 +203,7 @@ ul {
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     margin-bottom: 150px;
+    transform: translate(-.3vw, 0px);
 }
 
 
@@ -210,7 +279,7 @@ h2 {
         opacity: 0;
     }
     to {
-        margin-top: -12vw;
+        margin-top: -14vw;
         opacity: 1;
     }
 }
