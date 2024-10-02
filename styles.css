@@ -10,7 +10,7 @@
     overflow: hidden;
     scale: 2;
     background: url("./assets/images/StickersBanner.svg") repeat;
-    animation: loopSlide 10s linear infinite;
+    animation: loopSlide 70s linear infinite;
 }
 
 @keyframes loopSlide {
@@ -410,10 +410,20 @@ ul {
         display: none !important;
     }
     .awards img {
-        width: 45%;
+        width: 60%;
     }
     .awards {
         gap: 5px;
+        /* width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: -50px;
+            margin-bottom: 100px;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: center; */
+        /* animation: slidein 1s ease-in-out; */
     }
     .slides {
         height: 500px;
