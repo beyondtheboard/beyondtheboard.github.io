@@ -33,7 +33,9 @@
     <!-- Styles and Fonts -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://www.dafontfree.net/embed/bW9udW1lbnQtdmFsbGV5LTEyLXJlZ3VsYXImZGF0YS81MC9tLzMwNjIxL01vbnVtZW50X1ZhbGxleV8xLjItUmVndWxhci5vdGY" rel="stylesheet" type="text/css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Tajawal:wght@200&display=swap" rel="stylesheet">
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://kit.fontawesome.com">
 
@@ -61,9 +63,14 @@
         <header id="header">
             <nav id="nav-bar">
                 <ul>
-                    <li>
+                    <!-- <li>
                         <a href="https://twitter.com/beyond_theboard" class="nav-link">
                             <i class="fa-brands fa-x-twitter"></i> Twitter
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC1Q4UKEoHyQZSwRSbp7jx_w" class="nav-link">
+                            <i class="fa-brands fa-youtube"></i> Youtube
                         </a>
                     </li>
                     <li>
@@ -71,24 +78,25 @@
                             <i class="fa-brands fa-tiktok"></i> Tiktok
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="https://www.youtube.com/channel/UC1Q4UKEoHyQZSwRSbp7jx_w" class="nav-link">
-                            <i class="fa-brands fa-youtube"></i> Youtube
-                        </a>
-                    </li> -->
+
                     <li>
-                        <a href="https://www.instagram.com/beyond__the__board/" class="nav-link">
+                        <a href="https://www.instagram.com/beyond__the__board/" class="nav-link ">
                             <i class="fa-brands fa-instagram"></i> Instagram
                         </a>
                     </li>
                     <li class="space"></li>
+                    <li>
+                        <a href="https://tinyurl.com/beyond-the-board-presskit" class="nav-link mobile-only">
+                            <i class="fa-brands fa-steam"></i>
+                        </a>
+                    </li>
                     <li>
                         <a href="https://tinyurl.com/beyond-the-board-presskit" id="press-kit" class="nav-link">
                             <i class="fa-regular fa-images"></i> Presskit
                         </a>
                     </li>
                     <li>
-                        <a href="https://forms.gle/RoHFe3LMcchCEG5j8" class="nav-link">
+                        <a href="https://forms.gle/RoHFe3LMcchCEG5j8" id="press-kit" class="nav-link">
                             <i class="fa-sharp fa-regular fa-envelope"></i> Newsletter
                         </a>
                     </li>
@@ -136,8 +144,11 @@
 
 
     <div class="awards">
-        <img src="./assets/images/laurels/jovemcriador.png" class="reveal" alt="logo">
-        <img src="./assets/images/laurels/ntf.png" class="reveal" alt="logo">
+        <img src="./assets/images/laurels/IndieX_Laurel.png" class="reveal" alt="logo">
+        <img src="./assets/images/laurels/indiedev_Laurel.png" class="reveal" alt="logo">
+        <img src="./assets/images/laurels/ntf_Laurel.png" class="reveal" alt="logo">
+        <img src="./assets/images/laurels/jovem_Laurel.png" class="reveal" alt="logo">
+        <img src="./assets/images/laurels/DEVGAMM_Laurel.png" class="reveal" alt="logo">
     </div>
 
     <ul class="slides reveal">
@@ -219,38 +230,89 @@
 
 
     <section class="about-section">
-        <img src="./assets/images/Background2.png" class="back" " alt=" ">
+        <img src="./assets/images/Background2.png" class="back" " alt=" "/>
         <div class=" about-section-parent-wrapper ">
         <div class=" about-wrapper reveal ">
-            <h1>About</h1>
+            <h1 class=" glow ">About</h1>
             <h2>Beyond The Board is a single-player puzzle game that transforms traditional chess into a minimal,
                 immersive journey, inviting players to explore a land of shifting tiles and solve rule-breaking puzzles
 
             </h2>
         </div>
 
+        <div class=" desc-image reveal ">
+            <img src=" https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2794160/extras/About.gif?t=1731027979 "/>
+        </div>
+        
         <div class=" about-wrapper about-wrapper-opposite reveal ">
-            <h2 class=" inv ">During a chess match, a mysterious lightning strike disrupts the game, shattering the
-                board and sending the pieces into unknown depths. With only a single Rook, you must chase the enemy King
-                through this new chess realm, in order to seek answers and the rest of your party.
+            <h2 class=" inv ">A mysterious lightning strike disrupts the game, shatters the
+                board and sends all pieces into unknown depths. Only with a single Rook, you must chase the enemy King
+                through this new realm to seek answers and your party.
             </h2>
-            <h1>Story </h1>
+            <h1 class=" glow ">Story </h1>
+        </div>
+        
+        <div class=" desc-image reveal inv ">
+            <img src=" https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2794160/extras/Intro.gif?t=1731027979 " />
+        </div>
+    
+        <div class=" about-wrapper reveal ">
+            <h1 class=" glow ">Puzzles</h1>
+            <h2>In this chess journey, each level features puzzles that incorporate standard checkmate strategies but with new rules and conditions, requiring players to think outside the box
+            </h2>
         </div>
 
+        <div class=" desc-image reveal ">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2794160/extras/Puzzles.gif?t=1731027979 "/>
         </div>
+        
+        <div class=" about-wrapper about-wrapper-opposite reveal ">
+            <h2 class=" inv ">In this world, you'll face many enemy pieces with unique curses. To defeat them, you must understand their behaviour and outplay them. Be prepared as you will be also facing <b>Boss pieces</b>.
+            </h2>
+            <h1 class=" glow ">Enemies</h1>
+        </div>
+        
+        <div class=" desc-image reveal inv ">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2794160/extras/Pieces.gif?t=1731027979 " />
+        </div>
+
+
+        <div class=" about-wrapper reveal ">
+            <h1 class=" glow ">Replay</h1>
+            <h2>Hidden paths which become accessible as you unlock specific pieces and expand your party.
+                Using the level selector you can revisit past levels & kingdoms with different combinations of pieces
+            </h2>
+        </div>
+
+        <div class=" desc-image reveal ">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2794160/extras/Replay.gif?t=1731027979 "/>
+        </div>
+        
+        <div class=" about-wrapper about-wrapper-opposite reveal ">
+            <h2 class=" inv ">There is still much to come in this upcoming project! We barely scratched the surface of what this world of shifting tiles and mind-bending puzzles can be!
+            </h2>
+            <h1 class=" glow ">More</h1>
+        </div>
+        
+        <div class=" desc-image reveal inv ">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2794160/extras/wish.gif?t=1731027979 " />
+        </div>
+
+
+    </div>
     </section>
 
 
-    <div class="trailer-section reveal ">
+    <div class=" trailer-section reveal ">
         <h2>Watch the teaser here</h2>
-        <iframe width="560 " height="315 " src="https://www.youtube.com/embed/onF84HSjmL8?si=ZDplEwMbRnn1eNKZ&amp;controls=1 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+        <iframe width=" 560 " height=" 215 " src=" https://www.youtube.com/embed/LgOm8PH67bw?si=rH__7NwojIfNSHMy&amp;controls=1 " title=" YouTube video player " frameborder=" 0 " allow=" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
             picture-in-picture; web-share "
             allowfullscreen></iframe>
     </div> 
 
 
-    <div class="sticker-section ">
-        <!-- <img src="./assets/images/StickersBanner.svg "" alt=" "> -->
+    <div class=" sticker-section ">
+        <!-- <img src=" ./assets/images/StickersBanner.svg "" alt=" "> -->
         </div>
 
 

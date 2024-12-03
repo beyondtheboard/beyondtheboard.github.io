@@ -1,6 +1,50 @@
 @font-face {
     font-family: 'Monument_Valley_1.2';
     src: url("../../assets/fonts/mntv.woff") format('woff');
+    font-weight: 100;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    background-color: rgb(255, 255, 255, 0.2);
+    ;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Monument_Valley_1.2';
+    font-family: "Tajawal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: -.1em;
+    word-spacing: .2em;
+    margin: 0;
+    background-color: #000610;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.7);
+    border-radius: 0px;
+}
+
+.glow {
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 20px #ffffff, 0 0 40px;
 }
 
 .sticker-section {
@@ -43,6 +87,26 @@
     padding-top: 1vw;
 }
 
+.desc-image {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+}
+
+.desc-image.inv {
+    justify-content: right !important;
+}
+
+.desc-image.inv>img {
+    margin-right: 23px;
+}
+
+.desc-image>img {
+    width: 90%;
+    display: flex;
+    align-self: center;
+}
+
 .about-section-parent-wrapper {
     padding-left: 11vw;
     padding-right: 11vw;
@@ -61,14 +125,17 @@
 }
 
 .about-wrapper h1 {
+    font-family: 'Monument_Valley_1.2';
     margin: 0;
     font-size: 10em;
     letter-spacing: -.02em;
+    font-weight: 100;
 }
 
 .about-wrapper h2 {
     margin: 0;
-    font-size: 2.6em;
+    font-size: 2.4em;
+    font-weight: 100;
 }
 
 .about-wrapper .inv {
@@ -86,11 +153,11 @@
     align-content: center;
     justify-content: center;
     /* animation: slidein 1s ease-in-out; */
-    gap: 15%;
+    gap: 12%;
 }
 
 .awards img {
-    width: 25%;
+    width: 26%;
 }
 
 .slides {
@@ -270,19 +337,6 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
     opacity: 1;
 }
 
-body {
-    font-family: 'Monument_Valley_1.2';
-    letter-spacing: -.1em;
-    word-spacing: .2em;
-    margin: 0;
-    font-weight: 500;
-    font-style: normal;
-    background-color: #000610;
-    color: white;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
 .space {
     flex-grow: 1;
 }
@@ -321,11 +375,12 @@ h1 {
     /* background: red; */
     position: fixed;
     top: 0px;
-    width: 99vw;
+    width: 100vw;
     z-index: 10;
 }
 
 #steam-header {
+    font-family: 'Monument_Valley_1.2';
     position: fixed;
     top: 0px;
     left: 50%;
@@ -375,7 +430,21 @@ ul {
     margin-bottom: 10px;
 }
 
+.mobile-only {
+    display: none !important;
+}
+
 @media only screen and (max-width: 1000px) {
+    .mobile-only {
+        display: flex !important;
+    }
+    .desc-image.inv>img {
+        margin-right: 0px;
+    }
+    .desc-image>img {
+        height: 300px;
+        object-fit: cover;
+    }
     #header {
         width: 100vw;
     }
@@ -385,6 +454,7 @@ ul {
         font-size: 0px;
     }
     #steam-header {
+        display: none;
         top: 60px;
         /* position: absolute; */
         /* top: 90vh; */
@@ -439,12 +509,15 @@ ul {
     }
     .about-wrapper-opposite {
         align-items: end;
+        flex-direction: column-reverse;
     }
     .about-wrapper h1 {
+        font-weight: 100;
         font-size: 6em;
     }
     .about-wrapper h2 {
-        font-size: 1.7em;
+        font-weight: 100;
+        font-size: 1.6em;
     }
     .trailer-section {
         margin-top: 100px !important;
@@ -602,13 +675,15 @@ ul {
 }
 
 .trailer-section iframe {
-    width: 60vw;
+    width: 80vw;
     height: 800px;
     z-index: 1;
 }
 
 .trailer-section h2 {
     background-color: #C0A92D;
+    font-family: 'Monument_Valley_1.2';
+    font-weight: 200;
     width: 100%;
     height: 330px;
     text-align: center;
