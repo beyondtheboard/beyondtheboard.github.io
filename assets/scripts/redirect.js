@@ -1,1 +1,1 @@
-window.location.href = 'https://beyondtheboard.github.io/';
+window.location.href = 'https://beyond-theboard.com/';
