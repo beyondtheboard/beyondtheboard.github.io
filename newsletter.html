@@ -122,7 +122,7 @@
 
     <div class="center-press">
 
-        <h2>Submit Data to Google Form</h2>
+        <h2>Be part of our Newsletter</h2>
 
         <form id="googleForm">
             <label for="name">Name:</label>
@@ -140,7 +140,7 @@
 
         <footer>
             <h2>For additional information please contact us at
-                <a href=" mailto:beyond_the_board@outlook.com ">beyond_the_board@outlook.com</a>
+                <a href=" mailto:contact@beyond-theboard.com ">beyond_the_board@outlook.com</a>
             </h2>
         </footer>
 
@@ -159,6 +159,7 @@
                     body: formData
                 }).then(() => {
                     document.getElementById("responseMessage").innerText = "Form submitted successfully!";
+                    document.getElementById("googleForm").remove(); // Clears the form fields
                 }).catch(error => {
                     document.getElementById("responseMessage").innerText = "Submission failed. Please try again.";
                     console.error("Error:", error);
