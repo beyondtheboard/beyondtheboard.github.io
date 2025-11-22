@@ -108,8 +108,27 @@ body {
 }
 
 .about-section-parent-wrapper {
-    padding-left: 18vw;
-    padding-right: 18vw;
+    /* padding-left: 18vw;
+    padding-right: 18vw; */
+    max-width: 1500px;
+    margin: auto;
+}
+
+.subtitle-wrapper {
+    font-family: 'Monument_Valley_1.2';
+    font-weight: lighter;
+    font-size: 2em;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: -150px;
+    margin-bottom: 150px;
+    /* padding-top: 10vw; */
+    /* animation: slidein 1s ease-in-out; */
 }
 
 .about-wrapper {
@@ -167,10 +186,11 @@ body {
 
 .slides {
     padding: 0;
-    /* width: 100%; */
-    height: 820px;
+    width: 70%;
+    height: 1200px;
     display: block;
     margin: 0 auto;
+    margin-top: 350px;
     position: relative;
 }
 
@@ -219,7 +239,7 @@ body {
     color: #FFF;
     font-size: 96pt;
     text-align: center;
-    line-height: 550%;
+    line-height: 1000%;
     font-family: "Varela Round", sans-serif;
     text-shadow: 0px 0px 15px rgb(119, 119, 119);
 }
@@ -389,13 +409,14 @@ h1 {
     position: fixed;
     top: 0px;
     left: 50%;
-    width: 30vw;
+    width: 25vw;
     transform: translate(-50%, 0);
     z-index: 10;
 }
 
 #steam-header>#nav-bar {
-    background-color: #1a1e22;
+    /* background-color: #1a1e22; */
+    /* background: linear-gradient(0deg, rgb(131 128 128 / 26%) 0%, rgb(52 52 52 / 53%) 45%, rgb(0 0 0 / 0%) 100%); */
 }
 
 #nav-bar {
@@ -403,8 +424,12 @@ h1 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.5);
-    background-color: #1a1e22;
+    /* background-color: rgba(51, 51, 51, 0.5);
+    background-color: #1a1e22; */
+    background: #000000;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 1) 100%); */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 45%, rgb(44 44 44 / 92%) 100%); */
+    filter: drop-shadow(-1px 0px 73px #5d5d5d8c);
     /* color: white; */
 }
 
@@ -441,6 +466,9 @@ ul {
 }
 
 @media only screen and (max-width: 1000px) {
+    .not-mobile {
+        display: none;
+    }
     .mobile-only {
         display: flex !important;
     }
@@ -485,6 +513,29 @@ ul {
     #press-kit {
         display: none !important;
     }
+    .subtitle-wrapper {
+        font-size: .6em !important;
+        letter-spacing: 2.5px;
+        text-align: center;
+        padding: .5em;
+    }
+    .bannerVideo {
+        top: 17%;
+        height: 62%;
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+        -webkit-mask-repeat: initial !important;
+        mask-repeat: initial !important;
+        -webkit-mask-position: initial !important;
+        mask-position: initial !important;
+        -webkit-mask-size: initial !important;
+        mask-size: initial !important;
+    }
+    .videoControls {
+        top: 12% !important;
+        width: 100% !important;
+        gap: 5px !important;
+    }
     .awards img {
         width: 60%;
     }
@@ -503,6 +554,11 @@ ul {
     }
     .slides {
         height: 500px;
+        margin-top: 50px;
+        width: 100%;
+    }
+    input:checked+.slide-container .nav label {
+        opacity: 0;
     }
     .about-section .back {
         width: 500%;
@@ -517,24 +573,34 @@ ul {
         align-items: end;
         flex-direction: column-reverse;
     }
+    .desc-image {
+        margin: 0;
+    }
     .about-wrapper h1 {
         font-weight: 100;
-        font-size: 6em;
+        font-size: 5em;
+        margin-left: .05em;
     }
     .about-wrapper h2 {
         font-weight: 100;
-        font-size: 1.6em;
+        font-size: 1.4em;
+        margin: 13px;
     }
     .trailer-section {
         margin-top: 100px !important;
+        padding-bottom: 0px !important;
     }
     .trailer-section h2 {
         font-size: 2em !important;
         height: 290px !important;
     }
     .trailer-section iframe {
-        height: 200px !important;
-        width: 90vw !important;
+        height: 300px !important;
+        width: 100vw !important;
+    }
+    .sticker-container {
+        width: 100%;
+        overflow: hidden;
     }
     .sticker-section {
         margin-top: 100px;
@@ -543,8 +609,14 @@ ul {
     }
 }
 
+#nav-bar li a {
+    transition: .2s ease-in-out;
+}
+
 #nav-bar li a:hover {
-    font-weight: 600;
+    font-weight: 300;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.118);
 }
 
 .bannerContainer {
@@ -552,6 +624,102 @@ ul {
     justify-content: center;
     width: 100vw;
     animation: slidein 1s ease-in-out;
+}
+
+.playButton {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.45);
+    /* darker transparent for contrast */
+    /* border-radius: 50%; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.playButton i {
+    font-size: 36px;
+    color: white;
+}
+
+.bannerVideo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    /* width: 70%; */
+    height: 82%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+    z-index: 2;
+    /* Fade edges */
+    -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+}
+
+.bannerContainer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    /* Strong fade all edges */
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+
+/* Optional hover effect */
+
+.playButton:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.videoControls {
+    position: absolute;
+    top: 12%;
+    width: 70%;
+    z-index: 5;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0 20px;
+    pointer-events: auto;
+    flex-direction: row-reverse;
+    gap: 30px;
+    /* transition: .6 ease-in-out; */
+}
+
+.videoControls i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    /* border-radius: 6px; */
+    /* opacity: 0; */
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition: transform 0.2s ease;
+}
+
+.videoControls i:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.607);
+    transform: scale(1.2);
 }
 
 #banner {
@@ -682,8 +850,10 @@ ul {
 
 .trailer-section iframe {
     width: 80vw;
-    height: 800px;
+    height: 60vh;
     z-index: 1;
+    max-width: 1500px;
+    margin-bottom: 200px;
 }
 
 .trailer-section h2 {
@@ -750,7 +920,15 @@ footer h2 {
         margin-bottom: 20px;
     }
     footer h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .scrollTopBtn {
+        bottom: 19px !important;
+        right: 22px !important;
+        padding: 8px 13px !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        color: white !important;
+        font-size: 25px !important;
     }
 }
 
@@ -793,4 +971,31 @@ footer h2 {
 
 .center-press>img {
     width: 500px;
+}
+
+.scrollTopBtn {
+    position: fixed;
+    bottom: 38px;
+    right: 38px;
+    z-index: 900;
+    padding: 12px 15px;
+    border: none;
+    /* border-radius: 8px; */
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 29px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.2s ease;
+}
+
+.scrollTopBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.2);
+}
+
+.scrollTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
 }

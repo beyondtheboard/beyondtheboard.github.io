@@ -47,7 +47,7 @@
     <meta name="robots" content="index, follow">
 
     <script src="https://kit.fontawesome.com/20ea596c8b.js" crossorigin="anonymous"></script>
-    <script src="./assets/scripts/reveal.js"></script>
+
 
     <!-- Google Search Console verification tag if applicable -->
     <meta name="google-site-verification" content="google-site-verification=uHwEYquii5cKSa8m6em2ZrPMNKcoEBhPgyEFVzEE1uw">
@@ -109,8 +109,8 @@
                 <ul>
                     <li class="space"></li>
                     <li>
-                        <a href="https://store.steampowered.com/app/2794160/Beyond_The_Board/" id="steam" class="nav-link">
-                            <i class="fa-brands fa-steam"></i> Wishlist on Steam
+                        <a href="https://store.steampowered.com/app/2794160/Beyond_The_Board/?utm_source=landingpage" id="steam" class="nav-link">
+                            <i class="fa-brands fa-steam"></i> Steam Page Store
                         </a>
                     </li>
                     <li class="space"></li>
@@ -123,7 +123,22 @@
 
     <div class="bannerContainer">
         <!-- <img src="./assets/images/Background2.png" alt=" banner" id="banner"> -->
-        <img src="https://beyondtheboard.github.io/assets/images/Beyond_The_Board_Banner.webp" alt="banner" id="banner">
+        <img src="./assets/images/Beyond_The_Board_Banner_old.webp" alt="banner" id="banner">
+        <div class="playButton">
+            <i class="fa-solid fa-play"></i>
+        </div>
+
+        <video id="bannerVideo" class="bannerVideo" preload="auto" muted playsinline>
+            <source src="./assets/videos/trailer_1080.webm" type="video/webm">
+            <source src="./assets/videos/trailer_1080.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+        </video>
+
+        <!-- Video controls -->
+        <div class="videoControls">
+            <i id="closeVideo" class="fa-solid fa-xmark"></i>
+            <i id="muteVideo" class="fa-solid fa-volume-xmark"></i>
+        </div>
     </div>
 
     <img src="./assets/images/Beyond_The_Board_Logo_TP.webp" alt="logo" id="logo">
@@ -143,13 +158,19 @@
     </div> -->
 
 
-    <div class="awards">
+    <div class="subtitle-wrapper reveal ">
+        <h1>A chess inspired puzzle adventure</h1>
+    </div>
+
+
+    <!-- <div class="awards">
+        <img src="./assets/images/laurels/Awards_Collection_H_May2025.png" class="reveal" alt="logo">
         <img src="./assets/images/laurels/IndieX_Laurel.png" class="reveal" alt="logo">
         <img src="./assets/images/laurels/indiedev_Laurel.png" class="reveal" alt="logo">
         <img src="./assets/images/laurels/ntf_Laurel.png" class="reveal" alt="logo">
         <img src="./assets/images/laurels/jovem_Laurel.png" class="reveal" alt="logo">
         <img src="./assets/images/laurels/DEVGAMM_Laurel.png" class="reveal" alt="logo">
-    </div>
+    </div> -->
 
     <ul class="slides reveal">
         <input type="radio" name="radio-btn" id="img-1" checked />
@@ -218,6 +239,28 @@
             </div>
         </li>
 
+        <input type="radio" name="radio-btn" id="img-7" />
+        <li class="slide-container">
+            <div class="slide">
+                <img src="./assets/images/game/7.png" />
+            </div>
+            <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+        <input type="radio" name="radio-btn" id="img-8" />
+        <li class="slide-container">
+            <div class="slide">
+                <img src="./assets/images/game/8.png" />
+            </div>
+            <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+
+
         <li class="nav-dots">
             <label for="img-1" class="nav-dot" id="img-dot-1"></label>
             <label for="img-2" class="nav-dot" id="img-dot-2"></label>
@@ -225,8 +268,12 @@
             <label for="img-4" class="nav-dot" id="img-dot-4"></label>
             <label for="img-5" class="nav-dot" id="img-dot-5"></label>
             <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+            <label for="img-7" class="nav-dot" id="img-dot-7"></label>
+            <label for="img-8" class="nav-dot" id="img-dot-8"></label>
         </li>
     </ul>
+
+
 
 
     <section class="about-section">
@@ -234,8 +281,7 @@
         <div class=" about-section-parent-wrapper ">
         <div class=" about-wrapper reveal ">
             <h1 class=" glow ">About</h1>
-            <h2>Beyond The Board is a single-player puzzle game that transforms traditional chess into a minimal,
-                immersive journey, inviting players to explore a land of shifting tiles and solve rule-breaking puzzles
+            <h2>THIS IS (NOT) A CHESS GAME, it's a single-player puzzle game that transforms traditional chess into a minimal, immersive journey. Every move is a step deeper into the world Beyond the Board, where shifting tiles and puzzles reveal the hidden fractures within the game’s very foundations.
 
             </h2>
         </div>
@@ -303,24 +349,33 @@
 
 
     <div class=" trailer-section reveal ">
-        <h2>Watch the teaser here</h2>
-        <iframe width=" 560 " height=" 215 " src=" https://www.youtube.com/embed/LgOm8PH67bw?si=rH__7NwojIfNSHMy&amp;controls=1 " title=" YouTube video player " frameborder=" 0 " allow=" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+        <h2>Watch some gameplay here</h2>
+        <iframe width=" 560 " height=" 515 " src=" https://www.youtube.com/embed/xlErokL2-4c?si=wZgFvD2Fo4Kpkaq3&amp;controls=1 " title=" YouTube video player " frameborder=" 0 " allow=" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
             picture-in-picture; web-share "
             allowfullscreen></iframe>
     </div> 
 
 
-    <div class=" sticker-section ">
-        <!-- <img src=" ./assets/images/StickersBanner.svg "" alt=" "> -->
+    <div class="sticker-container ">
+        <div class=" sticker-section ">
+            <!-- <img src=" ./assets/images/StickersBanner.svg "" alt=" "> -->
+        </div>
         </div>
 
 
 </body>
+
+<button id="scrollTopBtn" class="scrollTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <footer>
     <h2>For additional information please contact us at
         <a href=" mailto:contact@beyond-theboard.com ">contact@beyond-theboard.com</a>
     </h2>
 </footer>
+
+<script src="./assets/scripts/reveal.js"></script>
+<script src="./assets/scripts/page.js"></script>
 
 </html>
